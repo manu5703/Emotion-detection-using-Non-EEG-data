@@ -59,8 +59,14 @@ Following is the distribution of calm and stress labels
 <img width="789" height="586" alt="image" src="https://github.com/user-attachments/assets/64463101-4734-4f8f-86ff-0a20f1a513df" />
 
 
-- Plotted **EDA signal (first 500 samples)** for calm vs stress across subjects.
+Plotted **EDA signal (first 500 samples)** for calm vs stress across subjects.
 <img width="1376" height="279" alt="image" src="https://github.com/user-attachments/assets/bbc0a644-0320-4c05-b68b-a4cf322651c7" />
 
-plt.plot(calm_sub['EDA'][:500], label='Calm')
-plt.plot(stress_sub['EDA'][:500], label='Stress')
+<img width="1381" height="529" alt="image" src="https://github.com/user-attachments/assets/2a794c50-303c-4867-af2a-3f80f8a369a2" />
+
+<img width="1398" height="558" alt="image" src="https://github.com/user-attachments/assets/1816cbc9-030f-4ef8-8afd-929274282119" />
+
+<img width="1161" height="641" alt="image" src="https://github.com/user-attachments/assets/0d3ebe02-93bb-476c-8981-153e2a9e3d4a" />
+
+
+
