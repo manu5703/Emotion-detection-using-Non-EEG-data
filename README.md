@@ -6,7 +6,7 @@ This project focuses on detecting emotional states (`calm` vs `stress`) using **
 
 ## Dataset
 
-**Source**: [PhysioNet - Non-EEG Dataset for Assessment of Neurological Status](https://physionet.org/)  
+**Source**: [PhysioNet - Non-EEG Dataset for Assessment of Neurological Status](https://physionet.org/content/noneeg/get-zip/1.0.0/)  
 **Signals Used**:
 - `EDA` (Electrodermal Activity)
 - `HR` (Heart Rate)
@@ -24,10 +24,10 @@ To process and classify the **physiological responses** of subjects into emotion
 
 ---
 
-## Methods
+## Method
 
 ### 1. Data Loading
-- Loaded `.dat`, `.hea`, and `.atr` files using the `wfdb` library.
+- Loaded files using the `wfdb` library.
 - Each subject has two recordings: one for EDA+Accel+Temp, one for HR+SpO2.
 
 ### 2. Signal Preprocessing
@@ -48,13 +48,19 @@ To process and classify the **physiological responses** of subjects into emotion
 
 ### 5. Final Dataset
 - Created a structured `X_df` containing features + labels
-- Also returned `y_series` and `all_data_df` for downstream tasks
-
+### 6. Model training
+- Performed scaling on X features
+- Implemented 5 models ( 1D CNN, SVM, Random forest, KNN, logical regression )
+- Evaluated models and summarized results.
 ---
 
 ## Visualization
+Following is the distribution of calm and stress labels
+<img width="789" height="586" alt="image" src="https://github.com/user-attachments/assets/64463101-4734-4f8f-86ff-0a20f1a513df" />
+
 
 - Plotted **EDA signal (first 500 samples)** for calm vs stress across subjects.
-```python
+<img width="1376" height="279" alt="image" src="https://github.com/user-attachments/assets/bbc0a644-0320-4c05-b68b-a4cf322651c7" />
+
 plt.plot(calm_sub['EDA'][:500], label='Calm')
 plt.plot(stress_sub['EDA'][:500], label='Stress')
