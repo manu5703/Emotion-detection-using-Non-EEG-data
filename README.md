@@ -71,5 +71,8 @@ Plotted **EDA signal (first 500 samples)** for calm vs stress across subjects.
 
 <img width="1161" height="641" alt="image" src="https://github.com/user-attachments/assets/0d3ebe02-93bb-476c-8981-153e2a9e3d4a" />
 
+<img width="479" height="645" alt="image" src="https://github.com/user-attachments/assets/861c7f35-a75c-4a8a-935e-c9109fbcf651" />
+
+
 
 
