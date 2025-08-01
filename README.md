@@ -45,10 +45,13 @@ To process and classify the **physiological responses** of subjects into emotion
   - Aggregated stats: `mean`, `std`, `min`, `max`
   - Flattened feature vector
   - Assigned most frequent label in the window
+### 5. Data preprocessing
+- Filled missing values with mean
+- Scaled X values
 
-### 5. Final Dataset
+### 6. Final Dataset
 - Created a structured `X_df` containing features + labels
-### 6. Model training
+### 7. Model training
 - Performed scaling on X features
 - Implemented 5 models ( 1D CNN, SVM, Random forest, KNN, logical regression )
 - Evaluated models and summarized results.
